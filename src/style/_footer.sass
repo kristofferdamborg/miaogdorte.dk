@@ -1,0 +1,37 @@
+footer 
+  background: url('/static/footer2.png');
+  background-size: cover
+  padding: 180px 0 40px 0
+  position: relative
+  .figures
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    display: flex
+    justify-content: space-around
+  .footer-boxes
+    display: flex 
+    justify-content: space-around
+    .footer-box
+      &-title 
+        font-family: 'Coming Soon', cursive
+        font-size: 1.6rem
+      ul 
+        padding: 0
+        list-style: none
+        li 
+          margin-bottom: 3px
+      p 
+        a 
+          text-decoration: none
+          color: #337ab7
+
+@media all and (max-width: 700px)
+  footer
+    .footer-boxes
+      flex-direction: column
+      padding-top: 40px
+      padding-left: 12px
+    .figures
+      top: 40px

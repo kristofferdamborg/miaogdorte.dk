@@ -1,0 +1,192 @@
+.header 
+  .logo 
+    img 
+      display: block
+  .mobile-nav
+    display: none
+    height: 44px
+    z-index: 99
+    position: relative
+    margin-top: 30px
+    .mobile-nav-button
+      background: url('/static/mobile-menu-button.png')
+      width: 134px
+      height: 46px
+      float: right
+      margin-right: 12px
+  .nav 
+    position: relative
+    z-index: 999
+    ul 
+      display: flex
+      justify-content: space-around
+      list-style: none
+      padding: 0
+      li 
+        font-size: 1.4rem
+        background-repeat: no-repeat
+        width: 174px
+        height: 44px 
+        display: flex
+        align-items: center
+        justify-content: center
+        position: relative
+        .submenu 
+          opacity: 0
+          display: none
+          position: absolute
+          top: 45px
+          transition: opacity .2s ease-in-out
+          li 
+            margin-top: 1px
+            &:hover 
+              transform: scale(1.05)
+        .submenu-1 
+          li 
+            background: url('/static/nav-link-bg-2.png')
+        .submenu-2 
+          li 
+            background: url('/static/nav-link-bg-3.png')
+        &:hover .submenu 
+          opacity: 1
+          display: block
+        a 
+          text-decoration: none
+          color: #000000
+          font-family: 'Coming Soon', cursive
+          font-weight: 500
+      li:nth-of-type(1) 
+        background: url('/static/nav-link-bg-1.png')
+        background-size: cover
+      li:nth-of-type(2) 
+        background: url('/static/nav-link-bg-2.png')
+        background-size: cover
+      li:nth-of-type(3) 
+        background: url('/static/nav-link-bg-3.png')
+        background-size: cover
+      li:nth-of-type(4) 
+        background: url('/static/nav-link-bg-4.png')
+        background-size: cover
+
+.slider 
+  background-color: #000000
+  padding: 3px
+  max-width: 100%
+  position: relative
+  padding: 3px 3px 0 3px
+  .slick-prev
+    width: 40px
+    height: 42px
+    font-size: 0
+    background-color: transparent
+    border: 0
+    outline: 0
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    left: -10px
+    z-index: 9999
+    background: url('/static/next-button.png')
+    background-repeat: no-repeat
+    cursor: pointer
+  .slick-next
+    width: 40px
+    height: 42px
+    font-size: 0
+    background-color: transparent
+    border: 0
+    outline: 0
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    right: -10px
+    z-index: 9999
+    background: url('/static/prev-button.png')
+    background-repeat: no-repeat
+    cursor: pointer
+
+.boxes
+  display: flex
+  flex-wrap: wrap
+  margin-top: 30px
+  .box
+    flex: calc(50% - 24px)
+    padding: 12px
+    margin-bottom: 20px
+    &-title 
+      font-size: 2rem
+      font-family: 'Coming Soon', cursive
+    &-inner 
+      padding: 16px 22px
+      min-height: 225px
+      p 
+        font-size: 1.1rem
+        margin-bottom: 0
+        margin-top: 5px
+        a 
+          text-decoration: none
+          color: #337ab7
+      ul 
+        padding-left: 12px
+        padding-bottom: 0
+        li 
+          margin-bottom: 8px
+      iframe
+        width: 100%
+  .box:nth-of-type(1) 
+    .box-inner 
+      background: url('/static/box-bg-1.png')
+      background-repeat: no-repeat
+      background-size: 100%
+  .box:nth-of-type(2) 
+  .box-inner 
+    background: url('/static/box-bg-2.png')
+    background-repeat: no-repeat
+    background-size: 100%
+  .box:nth-of-type(3) 
+    .box-inner 
+      background: url('/static/box-bg-3.png')
+      background-repeat: no-repeat
+      background-size: 100%
+      padding: 15px 3px 0 3px
+  .box:nth-of-type(4) 
+    .box-inner 
+      background: url('/static/box-bg-4.png')
+      background-repeat: no-repeat
+      background-size: 100%
+
+@media all and (max-width: 700px)
+  .boxes
+    .box
+      flex: calc(100% - 24%)
+      margin: 0
+      height: auto
+      margin-bottom: 10px
+      &-title 
+        text-align: center
+      &-inner 
+        height: auto
+        border: 3px solid #000000
+        p 
+          font-size: 1.3rem
+        ul 
+          li 
+            font-size: 1.3rem
+  .box:nth-of-type(1) 
+    .box-inner 
+      background: #ffb4b4!important
+  .box:nth-of-type(2) 
+    .box-inner 
+      background: #d0ffcf!important
+  .box:nth-of-type(3) 
+    .box-inner 
+      background: #ffd3ff!important
+  .box:nth-of-type(4) 
+    .box-inner 
+      background: #ffeacf!important
+
+@media all and (max-width: 860px) 
+  .nav
+    display: none
+  .mobile-nav
+    display: block!important

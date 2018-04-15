@@ -1,5 +1,5 @@
 {
-  "name": "static-html-site-boilerplate",
+  "name": "miaogdorte.dk",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,10 +10,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/erickzhao/static-html-webpack-boilerplate.git"
+    "url": "https://github.com/kristofferdamborg/miaogdorte.dk"
   },
-  "author": "erick zhao",
-  "license": "ISC",
+  "author": "Kristoffer Damborg Jørgensen",
+  "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^7.1.6",
     "babel-cli": "^6.26.0",
@@ -40,7 +40,12 @@
     "webpack-dev-server": "^2.9.3",
     "webpack-merge": "^4.1.1"
   },
-  "dependencies": {},
+  "dependencies": {
+    "image-webpack-loader": "^4.2.0",
+    "jquery": "^3.3.1",
+    "lightbox2": "^2.10.0",
+    "slick-carousel": "^1.8.1"
+  },
   "browserslist": [
     "> 1%",
     "last 2 versions"

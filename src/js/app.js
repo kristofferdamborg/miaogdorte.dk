@@ -4,9 +4,20 @@ import 'slick-carousel';
 $(document).ready(() => {
   $('.slider').slick({
     autoplay: true,
+    autoplaySpeed: 4000,
     fade: true,
     adaptiveHeight: true,
   });
+});
+
+$('.mobile-nav-button').on('click', () => {
+  $('.mobile-nav-links').toggleClass('mobile-nav-links--open');
+  $('.mobile-nav-overlay').toggleClass('mobile-nav-overlay--open');
+});
+
+$('.mobile-nav-overlay').on('click', () => {
+  $('.mobile-nav-links').toggleClass('mobile-nav-links--open');
+  $('.mobile-nav-overlay').toggleClass('mobile-nav-overlay--open');
 });
 
 (function (d, s, id) {

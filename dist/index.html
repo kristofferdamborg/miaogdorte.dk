@@ -6,22 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" href="static/favicon.png">
   <title>Mia & Dorte - Privat Dagpleje</title>
+  <meta name="description" content="Et hus på børnenes præmisser - privat dagpleje i Biersted">
 <link href="style.bundle.css" rel="stylesheet"></head>
 
 <body>
   <div class="wrapper">
     <div class="header">
       <div class="logo">
-        <img src="static/logo.png" alt="Mia & Dorte Logo">
+        <a href="index.html">
+          <img src="static/logo.png" alt="Mia & Dorte Logo">
+        </a>
       </div>
       <div class="mobile-nav">
         <div class="mobile-nav-button"></div>
       </div>
-      <div class="nav">
-        <ul>
+      <div class="mobile-nav-overlay"><div class="mobile-nav-close">X</div></div>
+      <div class="mobile-nav-links">
+        <ul class="mobile-nav-links-list">
           <li><a href="index.html">Forside</a></li>
           <li>
-            <a href="hvem-er-vi.html">Hvem er vi?</a>
+            <a href="om-os.html">Hvem er vi?</a>
             <ul class="submenu submenu-1">
               <li><a href="om-dagplejen.html">Om dagplejen</a></li>
               <li><a href="om-os.html">Om os</a></li>
@@ -30,7 +34,31 @@
             </ul>
           </li>
           <li>
-            <a href="information.html">Information</a>
+            <a href="praktisk-info.html">Information</a>
+            <ul class="submenu submenu-2">
+              <li><a href="praktisk-info.html">Praktisk info</a></li>
+              <li><a href="kost.html">Kost</a></li>
+              <li><a href="aabningstider.html">Åbningstider</a></li>
+              <li><a href="huskeseddel.html">Huskeseddel</a></li>
+            </ul>
+          </li> 
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="nav">
+        <ul>
+          <li><a href="index.html">Forside</a></li>
+          <li>
+            <a href="om-os.html">Hvem er vi?</a>
+            <ul class="submenu submenu-1">
+              <li><a href="om-dagplejen.html">Om dagplejen</a></li>
+              <li><a href="om-os.html">Om os</a></li>
+              <li><a href="video.html">Video</a></li>
+              <li><a href="faciliteter.html">Faciliteter</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="praktisk-info.html">Information</a>
             <ul class="submenu submenu-2">
               <li><a href="praktisk-info.html">Praktisk info</a></li>
               <li><a href="kost.html">Kost</a></li>
@@ -74,7 +102,7 @@
             </div>
             <div class="box-inner">
               <p>
-                I er meget velkomne til at kontakte os for høre nærmere om fremtidige pladser.
+                I er meget velkomne til at <a href="/kontakt">kontakte os</a> for høre nærmere om fremtidige pladser.
               </p>
               <p>
                 I kan også aftale en tid, så I kan komme ud og besøge os.
@@ -120,7 +148,9 @@
   <footer>
     <div class="figures">
       <div></div>
-      <img src="static/figure-ball.png" alt="Dreng med bold">
+      <div>
+        <img src="static/figure-ball.png" alt="Dreng med bold">
+      </div>
     </div>
     <div class="wrapper">
       <div class="footer-boxes">
